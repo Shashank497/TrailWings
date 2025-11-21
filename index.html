@@ -234,7 +234,16 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Chatbot-->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://n8n-s5fk.onrender.com/webhook/0ec2ec61-7256-4130-aa0d-961af22c9eff/chat'
+	});
+</script>
+
 </body>
 </html>
 
